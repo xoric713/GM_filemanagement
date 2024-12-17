@@ -22,7 +22,7 @@ Below is an overview of the key functions included in this project:
 - **Purpose**: Initializes the file management system.
 - **Details**: Creates necessary folders and checks for required files. This must be called at game start.
 
-### `file_save(filename, data)`
+### `save_data(filename, data)`
 - **Purpose**: Saves data to a specified file.
 - **Parameters**:
   - `filename` (string): The name of the file to save.
@@ -32,7 +32,7 @@ Below is an overview of the key functions included in this project:
    file_save("save1.sav", "player_position: 100, 200");
    ```
 
-### `file_load(filename)`
+### `load_data(filename)`
 - **Purpose**: Loads data from a specified file.
 - **Parameters**:
   - `filename` (string): The name of the file to load.
@@ -41,27 +41,6 @@ Below is an overview of the key functions included in this project:
    ```gml
    var data = file_load("save1.sav");
    ```
-
-### `file_exists(filename)`
-- **Purpose**: Checks if a specified file exists.
-- **Parameters**:
-  - `filename` (string): The name of the file to check.
-- **Returns**: `true` if the file exists, otherwise `false`.
-
-### `file_delete(filename)`
-- **Purpose**: Deletes a specified file.
-- **Parameters**:
-  - `filename` (string): The name of the file to delete.
-- **Example**:
-   ```gml
-   file_delete("save1.sav");
-   ```
-
-### `file_list(directory)`
-- **Purpose**: Lists all files in a specified directory.
-- **Parameters**:
-  - `directory` (string): The directory to list files from.
-- **Returns**: An array of file names.
 
 ---
 
