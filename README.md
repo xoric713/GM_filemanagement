@@ -1,5 +1,5 @@
 # GM File Management System
-
+##by xoric 713
 This project provides a robust file management system for GameMaker Studio. It allows you to handle file creation, reading, and saving with ease.
 
 ## Getting Started
